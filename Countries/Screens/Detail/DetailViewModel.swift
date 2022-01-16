@@ -16,7 +16,7 @@ protocol DetailViewModelDelegate: AnyObject {
 final class DetailViewModel {
     
     private(set) var isFavorited: Bool?
-    private(set) var country: CountryDetail?
+    private var country: CountryDetail?
     
     weak var delegate: DetailViewModelDelegate?
     
@@ -25,6 +25,12 @@ final class DetailViewModel {
     init(code: String) {
         self.code = code
         self.fetchCountry()
+    }
+    
+    var url: URL {
+        let baseURLString = "https://www.wikidata.org/wiki"
+        guard let id = country?.id else { return URL(string: baseURLString)! }
+        return URL(string: "\(baseURLString)/\(id)")!
     }
     
     func fetchCountry() {

@@ -46,14 +46,11 @@ final class DetailViewController: UIViewController {
     }
     
     @objc func didTapFavoriteButton(_ sender: UIBarButtonItem) {
-        print("didTapFavoriteButton")
         viewModel.didTapFavoriteButton()
     }
     
     @objc func didTapMoreInfo(_ sender: UIButton) {
-        guard let code = viewModel.country?.code else { return }
-        let url = URL(string: "https://www.wikidata.org/wiki/\(code)")!
-        presentSafariViewController(with: url)
+        presentSafariViewController(with: viewModel.url)
     }
 }
 
@@ -64,7 +61,6 @@ extension DetailViewController: DetailViewModelDelegate {
         DispatchQueue.main.async {
             let name = isFavorited ? "star.fill" : "star"
             self.configureNavigationBarButton(with: name)
-            print(isFavorited, "didFinishChecking")
         }
     }
     
