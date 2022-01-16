@@ -5,14 +5,14 @@ This project was a fun experiment for me to recall my UIKit skills since I've be
 >When I thought I finished the project something went wrong and removed the project from the local repo. Thanks to Git and GitHub I was able to use copy of my project but there was an another issue: I accidently ignored the important part of the project while I first initialized Git so project didn't work when I cloned the remote repo and tried to run it. I created a new local repo and carried the old project inside the new project. So excuse me for bad commits in this project. If you want to see the old project and its commits I'll be happy to help.
 
 ### Usage
-First, you need to create an account and get a key from [here](https://rapidapi.com/wirefreethought/api/geodb-cities). I created a constants file and ignored it for hiding my personal api key.
+First, you need to create an account and get a key from [here](https://rapidapi.com/wirefreethought/api/geodb-cities). I created a constants file and ignored it for hiding my personal api key. In order to run the project successfully you need to create something like this below.
 ```
 enum K {
     static let BASE_URL = "wft-geo-db.p.rapidapi.com/v1"
     static let API_KEY = "pJnObC09yXmshSQlCdrincRoV6skp"
 }
 ```
-Also do not forget to install [SDWebImage](https://github.com/SDWebImage/SDWebImage) and [SDWebImageSVGCoder](https://github.com/SDWebImage/SDWebImageSVGCoder) so that you can work with SVG flag images from the network. 
+Also do not forget to install [SDWebImage](https://github.com/SDWebImage/SDWebImage) and [SDWebImageSVGCoder](https://github.com/SDWebImage/SDWebImageSVGCoder) so that you can download SVG flag images from the network and show them to the user. 
 
 ---
 
