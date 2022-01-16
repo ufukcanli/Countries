@@ -1,6 +1,6 @@
 # Countries
 ## Take home project for adesso Turkey.
-This project was a fun experiment for me to recall my UIKit skills since I've been using SwiftUI for quite some time lately. I tried to follow MVVM architecture with the help of delegation pattern. I didn't use storyboards except the launch screen. Every screen is created programmatically with the help of auto layout. I added loading indicators, a simple label for handling empty state, pull-to-refresh functionality, swipe gestures, a fine button animation, safari view controller to show more info web page inside the app and some more good stuff like these. Do not hesitate to fork it, clone it and play around with it!
+This project was a fun experiment for me to recall my UIKit skills since I've been using SwiftUI for quite some time lately. I tried to follow MVVM architecture with the help of delegation pattern. I didn't use storyboards except the launch screen. Every screen is created programmatically with the help of auto layout. I added loading indicators, a simple label for handling empty state, pull-to-refresh functionality, swipe gestures, a fine button animation, safari view controller to show more info web page inside the app, dark and light mode support and some more good stuff like these. Do not hesitate to fork it, clone it and play around with it!
 
 >When I thought I finished the project something went wrong and removed the project from the local repo. Thanks to Git and GitHub I was able to use copy of my project but there was an another issue: I accidently ignored the important part of the project while I first initialized Git so project didn't work when I cloned the remote repo and tried to run it. I created a new local repo and carried the old project inside the new project. So excuse me for bad commits in this project. If you want to see the old project and its commits I'll be happy to help.
 
@@ -21,6 +21,10 @@ Also do not forget to install [SDWebImage](https://github.com/SDWebImage/SDWebIm
 2. Users can remove a country from the saved list. ✅
 3. User can go to the detail card by selecting a country. ✅
 
+<img width="334" alt="home" src="https://user-images.githubusercontent.com/23053158/149675083-3a40b5dc-00ce-419c-8a25-c938d93ba31e.png">
+
+---
+
 ### Detail Screen
 1. User needs to be able to see country flag on top of the screen. ✅
 2. User needs to be able to see country code. ✅
@@ -28,10 +32,16 @@ Also do not forget to install [SDWebImage](https://github.com/SDWebImage/SDWebIm
 4. User should be able to add the country to saved list and remove the country from saved list. ✅
 5. Favorite button’s color should be changed according to whether it’s in saved list or not. ✅
 
+<img width="339" alt="detail5" src="https://user-images.githubusercontent.com/23053158/149675592-e02bd65d-9675-4d74-8cb1-ee8a5e99cae7.png">
+
+---
+
 ### Saved Screen
 1. User should be able to see saved countries. ✅
 2. User can go to the detail screen from here. ✅
 3. User needs to be able to remove the country from saved list. ✅
+
+<img width="334" alt="saved2" src="https://user-images.githubusercontent.com/23053158/149675091-18eed16b-1a04-4bbb-a514-7302a11b375d.png">
 
 ---
 
