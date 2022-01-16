@@ -42,10 +42,13 @@ extension DetailViewController {
     func configureMoreInfoButton() {
         view.addSubview(moreInfoButton)
         
+        moreInfoButton.startAnimatingPressActions()
         moreInfoButton.addTarget(self, action: #selector(didTapMoreInfo), for: .touchUpInside)
         moreInfoButton.setTitle("For More Information →", for: .normal)
         moreInfoButton.titleLabel?.font = .preferredFont(forTextStyle: .body)
         moreInfoButton.backgroundColor = .systemGray2
+        moreInfoButton.layer.cornerRadius = 8
+        moreInfoButton.layer.masksToBounds = true
         moreInfoButton.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
