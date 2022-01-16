@@ -19,7 +19,7 @@ final class TabBarController: UITabBarController {
         tabBar.tintColor = .label
         viewControllers = [
             createNavigationController(viewController: CountriesViewController(), title: "Home", imageName: "house"),
-            createNavigationController(viewController: UIViewController(), title: "Saved", imageName: "heart.fill")
+            createNavigationController(viewController: FavoritesViewController(), title: "Saved", imageName: "heart.fill")
         ]
     }
 }
