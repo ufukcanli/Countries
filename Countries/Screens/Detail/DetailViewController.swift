@@ -49,6 +49,12 @@ final class DetailViewController: UIViewController {
         print("didTapFavoriteButton")
         viewModel.didTapFavoriteButton()
     }
+    
+    @objc func didTapMoreInfo(_ sender: UIButton) {
+        guard let code = viewModel.country?.code else { return }
+        let url = URL(string: "https://www.wikidata.org/wiki/\(code)")!
+        presentSafariViewController(with: url)
+    }
 }
 
 // MARK: - DetailViewModelDelegate

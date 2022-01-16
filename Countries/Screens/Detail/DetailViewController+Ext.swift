@@ -42,7 +42,8 @@ extension DetailViewController {
     func configureMoreInfoButton() {
         view.addSubview(moreInfoButton)
         
-        moreInfoButton.setTitle("For More Information ➡️", for: .normal)
+        moreInfoButton.addTarget(self, action: #selector(didTapMoreInfo), for: .touchUpInside)
+        moreInfoButton.setTitle("For More Information →", for: .normal)
         moreInfoButton.titleLabel?.font = .preferredFont(forTextStyle: .body)
         moreInfoButton.backgroundColor = .systemGray2
         moreInfoButton.translatesAutoresizingMaskIntoConstraints = false

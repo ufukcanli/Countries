@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SafariServices
 
 extension UIViewController {
     
@@ -17,6 +18,13 @@ extension UIViewController {
             alertController.addAction(UIAlertAction(title: buttonTitle, style: .default, handler: nil))
             self.present(alertController, animated: true, completion: nil)
         }
+    }
+    
+    func presentSafariViewController(with url: URL) {
+        let safariViewController = SFSafariViewController(url: url)
+        safariViewController.preferredControlTintColor = .label
+        safariViewController.modalPresentationStyle = .pageSheet
+        present(safariViewController, animated: true, completion: nil)
     }
     
     func createAttributedString(_ boldText: String, _ normalText: String) -> NSAttributedString {

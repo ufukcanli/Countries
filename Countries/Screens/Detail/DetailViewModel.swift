@@ -16,7 +16,8 @@ protocol DetailViewModelDelegate: AnyObject {
 final class DetailViewModel {
     
     private(set) var isFavorited: Bool?
-    private var country: CountryDetail?
+    private(set) var country: CountryDetail?
+    
     weak var delegate: DetailViewModelDelegate?
     
     private let code: String
