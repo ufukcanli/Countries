@@ -48,12 +48,10 @@ extension FavoritesViewController: FavoritesViewModelDelegate {
     
     func didFinishFetching() {
         DispatchQueue.main.async { self.tableView.reloadData() }
-        print(viewModel.favorites)
     }
     
     func didFinishWithError() {
         presentAlertOnMainThread(title: "Ooops!", message: viewModel.errorMessage, buttonTitle: "OK")
-        print(viewModel.errorMessage)
     }
 }
 

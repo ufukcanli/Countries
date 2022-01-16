@@ -60,7 +60,6 @@ extension DetailViewController {
     func configureFlagImageView() {
         view.addSubview(flagImageView)
         
-        // TODO: Display loading and placeholder image
         flagImageView.image = UIImage(named: "flag")
         flagImageView.translatesAutoresizingMaskIntoConstraints = false
     

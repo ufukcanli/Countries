@@ -24,7 +24,6 @@ final class DetailViewModel {
     
     init(code: String) {
         self.code = code
-        self.fetchCountry()
     }
     
     var url: URL {
@@ -59,7 +58,6 @@ final class DetailViewModel {
     
     private func save(_ country: Country) {
         PersistenceManager.update(with: country, actionType: .add) { error in
-            // TODO: if error happens show alert
             print(error?.rawValue as Any)
             self.isAlreadyFavorited(country.id)
         }
@@ -67,7 +65,6 @@ final class DetailViewModel {
     
     private func remove(_ country: Country) {
         PersistenceManager.update(with: country, actionType: .remove) { error in
-            // TODO: if error happens show alert
             print(error?.rawValue as Any)
             self.isAlreadyFavorited(country.id)
         }
@@ -80,7 +77,6 @@ final class DetailViewModel {
                 if favorites.contains(where: { $0.id == self.country?.id }) {
                     self.isFavorited = true
                     self.delegate?.didFinishChecking(true)
-                    print(favorites)
                 } else {
                     self.isFavorited = false
                     self.delegate?.didFinishChecking(false)

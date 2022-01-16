@@ -39,9 +39,8 @@ final class CountriesViewController: UITableViewController {
     
     @objc func handleRefresh() {
         viewModel.fetchCountries()
-        tableView.reloadData()
         tableView.refreshControl?.endRefreshing()
-        print("handleRefresh")
+        tableView.reloadData()
     }
 }
 
@@ -58,7 +57,6 @@ extension CountriesViewController: CountriesViewModelDelegate {
     
     func didFinishWithError() {
         presentAlertOnMainThread(title: "Ooops!", message: viewModel.errorMessage, buttonTitle: "OK")
-        print(viewModel.errorMessage)
     }
 }
 
