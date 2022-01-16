@@ -18,7 +18,7 @@ final class TabBarController: UITabBarController {
     private func configureTabBarController() {
         tabBar.tintColor = .label
         viewControllers = [
-            createNavigationController(viewController: UIViewController(), title: "Home", imageName: "house"),
+            createNavigationController(viewController: CountriesViewController(), title: "Home", imageName: "house"),
             createNavigationController(viewController: UIViewController(), title: "Saved", imageName: "heart.fill")
         ]
     }
