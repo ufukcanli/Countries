@@ -13,6 +13,7 @@
 		D2EEC90E279457F900B8D0B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2EEC90C279457F900B8D0B7 /* LaunchScreen.storyboard */; };
 		D2EEC917279459E000B8D0B7 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = D2EEC916279459E000B8D0B7 /* SDWebImage */; };
 		D2EEC91A27945A0C00B8D0B7 /* SDWebImageSVGCoder in Frameworks */ = {isa = PBXBuildFile; productRef = D2EEC91927945A0C00B8D0B7 /* SDWebImageSVGCoder */; };
+		D2EEC91F27945D9600B8D0B7 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EEC91E27945D9500B8D0B7 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		D2EEC90A279457F900B8D0B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2EEC90D279457F900B8D0B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2EEC90F279457FA00B8D0B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2EEC91E27945D9500B8D0B7 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		D2EEC900279457F300B8D0B7 /* Countries */ = {
 			isa = PBXGroup;
 			children = (
+				D2EEC91C27945D4F00B8D0B7 /* Screens */,
 				D2EEC91B27945A6300B8D0B7 /* Configuration */,
 			);
 			path = Countries;
@@ -71,6 +74,22 @@
 				D2EEC90F279457FA00B8D0B7 /* Info.plist */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		D2EEC91C27945D4F00B8D0B7 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				D2EEC91D27945D5B00B8D0B7 /* TabBar */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		D2EEC91D27945D5B00B8D0B7 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				D2EEC91E27945D9500B8D0B7 /* TabBarController.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2EEC91F27945D9600B8D0B7 /* TabBarController.swift in Sources */,
 				D2EEC902279457F300B8D0B7 /* AppDelegate.swift in Sources */,
 				D2EEC904279457F300B8D0B7 /* SceneDelegate.swift in Sources */,
 			);
