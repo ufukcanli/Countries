@@ -74,6 +74,7 @@ extension DetailViewController: DetailViewModelDelegate {
             self.flagImageView.sd_setImage(with: url)
             let attributedText = self.createAttributedString("Country Code: ", country.code)
             self.countryCodeLabel.attributedText = attributedText
+            self.configureNavigationBar(with: country.name)
         }
     }
 }

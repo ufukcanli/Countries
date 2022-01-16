@@ -12,8 +12,8 @@ fileprivate let padding: CGFloat = 16
 // MARK: - ConfigureUI
 extension DetailViewController {
     
-    func configureNavigationBar() {
-        navigationItem.title = "Detail"
+    func configureNavigationBar(with title: String = "Detail") {
+        navigationItem.title = title
         navigationItem.largeTitleDisplayMode = .never
     }
     
