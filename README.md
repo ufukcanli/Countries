@@ -10,12 +10,11 @@
 1. User needs to be able to see country flag on top of the screen. ✅
 2. User needs to be able to see country code. ✅
 3. User should be navigated to **Wikidata** by clicking *"For More Information"* button. ✅
-4. User should be able to add the country to saved list and remove the country from saved
-list on this screen. ✅
+4. User should be able to add the country to saved list and remove the country from saved list. ✅
 5. Favorite button’s color should be changed according to whether it’s in saved list or not. ✅
 
 ## Saved Screen
-1. User should be able to see saved countries in this screen. ✅
+1. User should be able to see saved countries. ✅
 2. User can go to the detail screen from here. ✅
 3. User needs to be able to remove the country from saved list. ✅
 
