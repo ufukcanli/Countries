@@ -29,7 +29,6 @@ final class CountriesViewModel {
     }
     
     func saveCountry(at indexPath: IndexPath) {
-        print("saveCountry", indexPath.row)
         let country = countries[indexPath.row]
         PersistenceManager.update(with: country, actionType: .add) { error in
             print(error?.rawValue as Any)
@@ -37,7 +36,6 @@ final class CountriesViewModel {
     }
     
     func removeCountry(at indexPath: IndexPath) {
-        print("removeCountry", indexPath.row)
         let country = countries[indexPath.row]
         PersistenceManager.update(with: country, actionType: .remove) { error in
             print(error?.rawValue as Any)

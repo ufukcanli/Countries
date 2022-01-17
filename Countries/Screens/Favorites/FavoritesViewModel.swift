@@ -35,7 +35,6 @@ final class FavoritesViewModel {
     }
     
     func removeCountry(at indexPath: IndexPath) {
-        print("removeCountry", indexPath.row)
         let country = favorites[indexPath.row]
         PersistenceManager.update(with: country, actionType: .remove) { error in
             print(error?.rawValue as Any)
